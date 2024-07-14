@@ -1,0 +1,107 @@
+.box2{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.acc2-box-content{
+    height: 50vh;
+    width: 500px;
+    
+    text-align: justify;
+}
+.acc2input{
+    width: 100%;
+    padding: 10px;    
+    margin: 10px 10px 0 0;
+    box-sizing: border-box;
+   
+}
+.acc2-box-content button{
+    color: white;
+    padding:15px ;
+}
+.acc2-box-content h6{
+    margin-top:17px ;
+    margin-bottom: 0;
+    font-size: 25px;
+}
+.acc2-box-content h4{
+    margin: 0;
+    letter-spacing:2px;
+    font-size: 30px;
+}
+.acc2-box-content p{
+    font-size: 20px;
+    letter-spacing:1px;
+}
+/* General reset for smaller devices */
+@media (max-width: 768px) {
+    .btn button{
+        margin-right: 20px;
+    }
+
+    .acc2-box-content {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+    
+
+    .acc2input {
+        padding: 8px;
+        margin: 10px 0;
+    }
+
+    .acc2-box-content button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .acc2-box-content h6 {
+        font-size: 20px;
+    }
+
+    .acc2-box-content h4 {
+        font-size: 25px;
+    }
+
+    .acc2-box-content p {
+        font-size: 18px;
+    }
+}
+
+/* More specific adjustments for very small devices */
+@media (max-width: 480px) {
+    
+
+    .acc2-box-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .acc2input {
+        padding: 6px;
+        margin: 5px 0;
+    }
+
+    .acc2-box-content button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .acc2-box-content h6 {
+        font-size: 18px;
+    }
+
+    .acc2-box-content h4 {
+        font-size: 22px;
+    }
+
+    .acc2-box-content p {
+        font-size: 16px;
+    }
+}

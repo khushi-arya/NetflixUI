@@ -1,0 +1,163 @@
+/* .banner {
+    width:100%;
+    height:100%;
+    mask-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3) , rgba(0,0,0,0.3));
+    background-position: center;
+    background-size: cover;
+    border-bottom: 10px solid rgb(50, 49, 49);
+    position: relative;
+} */
+.home{
+    background-color: black;
+}
+
+
+.header-content{
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Black overlay */
+    url('../../images/header-image.png');
+    background-position: center;
+    background-size: cover;           
+    width: 100%;
+    height: 100vh;
+    color: white;
+    
+      
+}
+.header1{
+    width: 100%;
+    height: 100vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.header2{
+    width: 100%;
+    height: 50vh;
+   text-align: center;
+   
+}
+.header2 h1{
+    font-size: 60px;
+    font-weight: 700;
+    
+}
+.header2 h3{
+    font-size: 30px;
+    
+   
+}
+.header2 p{
+   
+    font-size:20px ;    
+    /* margin-bottom: 25px; */
+}
+.email{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3) , rgba(0,0,0,0.3));   
+    border-radius: 4px;
+    display: flex;
+    align-items: center;   
+    overflow: hidden;
+    width: 50%;    
+    height: 8vh;    
+    margin-top: 20px;   
+    margin-left: 25%;
+    
+    /* margin-top: 5px;
+    margin-left: 27%; */
+}
+ .email input{
+    color: white;
+    background: none;
+    flex:1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    margin-top: 7px;
+} 
+.email button{
+     background-color: #db0001;
+     padding: 17px;
+     width: 150px;
+     bottom: 0;
+     border: 0;
+     outline: 0;
+     color: white;
+     
+}
+/* General reset for smaller devices */
+@media (max-width: 768px) {
+    .header-content {
+        height: auto;
+    }
+
+    .header1,
+    .header2 {
+        height: auto;
+        padding: 20px;
+    }
+
+    .header2 h1 {
+        font-size: 40px;
+    }
+
+    .header2 h3 {
+        font-size: 20px;
+    }
+
+    .header2 p {
+        font-size: 16px;
+    }
+
+    .email {
+        width: 80%;
+        height: auto;
+        margin-top: 15px;
+        margin-left: 10%;
+    }
+
+    .email input {
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .email button {
+        padding: 10px;
+        width: 100px;
+    }
+}
+
+/* More specific adjustments for very small devices */
+@media (max-width: 480px) {
+    .header2 h1 {
+        font-size: 30px;
+    }
+
+    .header2 h3 {
+        font-size: 18px;
+    }
+
+    .header2 p {
+        font-size: 14px;
+    }
+
+    .email {
+        width: 90%;
+        height: auto;
+        margin-top: 10px;
+        margin-left: 5%;
+    }
+
+    .email input {
+        margin-top: 8px;
+        margin-left: 5px;
+        font-size: 14px;
+    }
+
+    .email button {
+        padding: 8px;
+        width: 90px;
+    }
+}

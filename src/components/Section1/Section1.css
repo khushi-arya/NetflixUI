@@ -1,0 +1,77 @@
+.feature{ 
+    padding:40px 12%;
+    font-size:22px;
+    height: 70vh;
+    border-bottom: 10px solid rgb(50, 49, 49);
+    background-color: black;
+ }
+ .row{
+     display: flex;
+     align-items: center;
+     width: 100%;
+     flex-wrap: wrap;
+     padding: 50px 0;
+ }
+ .text-col{
+    color: white;
+     flex-basis: 50%;
+     margin-bottom: 20px;
+     line-height: 1.5;
+ }
+ .text-col h1{
+    font-size: 3rem;
+    font-weight: 900;
+   
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img{
+     display: block;
+     width:90%;
+     margin:auto;
+}
+/* General reset for smaller devices */
+@media (max-width: 768px) {
+    .feature {
+        padding: 20px 5%;
+        font-size: 18px;
+        height: auto;
+    }
+
+    .row {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .text-col,
+    .img-col {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .text-col h1 {
+        font-size: 2.5rem;
+    }
+
+    .img-col img {
+        width: 100%;
+    }
+}
+
+/* More specific adjustments for very small devices */
+@media (max-width: 480px) {
+    .feature {
+        padding: 10px 2%;
+        font-size: 16px;
+    }
+
+    .text-col h1 {
+        font-size: 2rem;
+    }
+
+    .img-col img {
+        width: 100%;
+    }
+}

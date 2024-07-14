@@ -1,0 +1,115 @@
+
+
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+   
+}
+.logo1{
+    width: 150px;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+nav button{
+    border:0;
+    outline: 0;
+    height: 7vh;
+    width: 100px;
+    background-color: #db0001;
+    color: #fff;
+    padding:8px  12px ;
+    font-size: 16px solid;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.language-btn{
+   
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding:  7px 16px;
+    margin-right: 5px;
+}
+.active{
+   
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding:  7px 16px;
+    margin-right: 5px;
+    background-color: #db0001;
+    border: none;
+    text-align: center;
+}
+.language-btn img{
+    width: 13px;
+   margin-left: 3px;
+    vertical-align: middle;
+}
+/* General reset for smaller devices */
+@media (max-width: 768px) {
+    nav {
+        flex-direction:row;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .logo1 {
+        width: 120px;
+        padding: 20px;
+    }
+
+    nav button {
+        width: auto;
+        padding: 6px 10px;
+        font-size: 14px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .language-btn, .active {
+        padding: 6px 10px;
+        margin-right: 5px;
+        font-size: 14px;
+    }
+
+    .language-btn img {
+        width: 11px;
+        margin-left: 2px;
+    }
+}
+
+/* More specific adjustments for very small devices */
+@media (max-width: 480px) {
+  .nav{
+    display: flex;
+  }
+
+    .logo1 {
+        width: 100px;
+        padding: 10px;
+    }
+
+    nav button {
+        width: 100%;
+        padding: 5px;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .language-btn, .active {
+        padding: 5px 8px;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .language-btn img {
+        width: 10px;
+    }
+}
